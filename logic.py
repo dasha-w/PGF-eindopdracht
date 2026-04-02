@@ -1,0 +1,10 @@
+mood_dictionary = {'gelukkig': '; Motivational',
+                   'energiek': 'Humorous',
+                   'blij': 'Happiness',
+                   'loved': 'Friendship',
+                   'rustig': 'Love',
+                   'neutraal': 'Life',
+                   'zorgen': 'Self-help',
+                   'onzeker': 'Wisdom',
+                   'moe': 'Inspirational',
+                   'boos': 'Philosophy'}
