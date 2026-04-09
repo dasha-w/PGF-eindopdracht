@@ -108,7 +108,7 @@ def browse_slips(slips):
         display_chosen_advice(slips, chosen)
 
         while True:
-            again = input("\nWould you like to see another slip? (y/n): ").lower().strip()
+            again = input(f"\nWould you like to see another slip of the {total_count} found? (y/n): ").lower().strip()
             if again in ['y', 'yes']:
                 break
             elif again in ['n', 'no']:

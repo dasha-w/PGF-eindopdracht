@@ -36,7 +36,7 @@ def display_quote(data):
         quote = data[0]["q"]
         author = data[0]["a"]
         print(f'------------------------\n'
-              f'You quote for today is:\n'
+              f'Your quote for today is:\n'
               f'"{quote}"\n'
               f'- {author}')
 
@@ -78,7 +78,7 @@ def display_joke(data):
         setup = data["setup"]
         punchline = data["punchline"]
         print(f'------------------------\n'
-              f'You joke for today is:\n'
+              f'Your joke for today is:\n'
               f'{setup}\n'
               f'\n'
               f'{punchline}')
@@ -122,7 +122,7 @@ def display_advice(data):
     try:
         new_advice = data['slip']['advice']
         print(f'------------------------\n'
-              f'You advice for today is:\n"{new_advice}"')
+              f'Your advice for today is:\n"{new_advice}"')
 
     except (KeyError, TypeError) as e:
         print(f'Unexpected response format. Error: {e}')
@@ -146,15 +146,15 @@ def fall_back(categorie):
                       "Microchips")
 
     if categorie == 'advice':
-        text = fall_back_advice
+        print_text = fall_back_advice
     if categorie == 'quote':
-        text = fall_back_quote
+        print_text = fall_back_quote
     if categorie == 'joke':
-        text = fall_back_joke
+        print_text = fall_back_joke
 
     print(f'Printing fallback {categorie}.\n'
           f'-------------------------\n'
           f'Your {categorie} for today is:\n'
-          f'{text}')
+          f'{print_text}')
 
 
